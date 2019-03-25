@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import { Grid, Button } from 'semantic-ui-react'
+<<<<<<< HEAD
 import cuid from 'cuid'
+=======
+>>>>>>> a3716c2c4cbab08ae58f6731930bc7d77ac517ab
 import EventList from '../EventList/EventList'
 import EventForm from '../EventForm/EventForm'
 
@@ -8,7 +11,11 @@ const eventsDashboard = [
   {
     id: '1',
     title: 'Trip to Tower of London',
+<<<<<<< HEAD
     date: '2018-03-27',
+=======
+    date: '2018-03-27T11:00:00+00:00',
+>>>>>>> a3716c2c4cbab08ae58f6731930bc7d77ac517ab
     category: 'culture',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin ligula eu leo tincidunt, quis scelerisque magna dapibus. Sed eget ipsum vel arcu vehicula ullamcorper.',
@@ -32,7 +39,11 @@ const eventsDashboard = [
   {
     id: '2',
     title: 'Trip to Punch and Judy Pub',
+<<<<<<< HEAD
     date: '2018-03-28',
+=======
+    date: '2018-03-28T14:00:00+00:00',
+>>>>>>> a3716c2c4cbab08ae58f6731930bc7d77ac517ab
     category: 'drinks',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin ligula eu leo tincidunt, quis scelerisque magna dapibus. Sed eget ipsum vel arcu vehicula ullamcorper.',
@@ -57,6 +68,7 @@ const eventsDashboard = [
 
 
 class EventDashBoard extends Component {
+<<<<<<< HEAD
 
  state = {
       events: eventsDashboard,
@@ -129,12 +141,24 @@ class EventDashBoard extends Component {
                 <Button onClick={this.handleFormOpen} positive content='Create Event'></Button>
                  {  this.state.isOpen && 
                  <EventForm updateEvent={this.handleUpdateEvent} selectedEvent={selectedEvent} createEvent={this.handleCreateEvent} handleCancel={this.handleCancel}/> }
+=======
+  render() {
+    return (
+        <Grid>
+            <Grid.Column width={10}>
+                <EventList events={eventsDashboard}/>
+            </Grid.Column>
+            <Grid.Column width={6}>
+                <Button positive content='Create Event'></Button>
+                <EventForm/>
+>>>>>>> a3716c2c4cbab08ae58f6731930bc7d77ac517ab
             </Grid.Column>
         </Grid>
     )
   }
 }
 
+<<<<<<< HEAD
 export default EventDashBoard
 
 
@@ -153,3 +177,6 @@ export default EventDashBoard
 //   )
 // }
 
+=======
+export default EventDashBoard
+>>>>>>> a3716c2c4cbab08ae58f6731930bc7d77ac517ab
